@@ -348,7 +348,7 @@ internal class UserInterface
             "shortest","longest", "newest", "oldest", "no"
         };
 
-        for (int i = 0; i < inputPrompts.Length; i++)
+        for (int i = 0; i < inputPrompts.Length; i++) //iterate through and switch on prompts
         {
             AnsiConsole.MarkupLine(inputPrompts[i]);
             userInput = GetUserInput(voiceMode);
