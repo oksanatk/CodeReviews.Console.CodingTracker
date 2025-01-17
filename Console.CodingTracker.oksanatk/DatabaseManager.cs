@@ -1,11 +1,10 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
-using System.Configuration;
 
 namespace TSCA.CodingTracker;
 internal class DatabaseManager
 {
-    internal static string? connectionString = ConfigurationManager.AppSettings.Get("ConnectionString");
+    internal static string? connectionString = System.Configuration.ConfigurationManager.AppSettings.Get("ConnectionString");
 
     internal void CreateTable()
     {

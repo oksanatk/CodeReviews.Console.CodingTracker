@@ -414,7 +414,7 @@ internal class UserInterface
 
         foreach (CodingSession session in sessions)
         {
-            grid.AddRow(new string[] { session.id.ToString(), session.startTime.ToString(), session.endTime.ToString(), session.duration.ToString("hh\\:mm\\:ss") });
+            grid.AddRow(new string[] { session.Id.ToString(), session.StartTime.ToString(), session.EndTime.ToString(), session.Duration.ToString("hh\\:mm\\:ss") });
         }
         grid.AddEmptyRow();
 
