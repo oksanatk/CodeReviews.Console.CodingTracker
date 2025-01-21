@@ -1,4 +1,4 @@
-﻿namespace TSCA.CodingTracker;
+﻿namespace CodingTracker.oksanatk;
 
 internal static class Validation
 {

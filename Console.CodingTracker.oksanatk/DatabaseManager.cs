@@ -1,8 +1,7 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
-using System.Collections.ObjectModel;
 
-namespace TSCA.CodingTracker;
+namespace CodingTracker.oksanatk;
 internal class DatabaseManager
 {
     internal static string? connectionString = System.Configuration.ConfigurationManager.AppSettings.Get("ConnectionString");
