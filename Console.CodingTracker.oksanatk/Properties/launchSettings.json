@@ -2,9 +2,12 @@
   "profiles": {
     "CodingTracker": {
       "commandName": "Project",
-      "commandLineArgs": "--voice-input",
-      "workingDirectory": "C:\\Users\\O\\source\\repos\\Learning Projects\\CodingTracker",
+      "workingDirectory": "C:\\Users\\O\\source\\repos\\CodeReviews.Console.CodingTracker\\Console.CodingTracker.oksanatk\\",
       "sqlDebugging": true
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
   }
 }
