@@ -102,7 +102,13 @@ internal class CodingSessionController
         {
             total += session.Duration;
         }
-        average = total / filteredSessions.Count;
+        if (filteredSessions.Count > 0)
+        {
+            average = total / filteredSessions.Count;
+        } else
+        {
+            average = TimeSpan.Zero;
+        }
 
         return new TimeSpan[] { total, average };
     }

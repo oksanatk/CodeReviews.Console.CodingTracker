@@ -31,6 +31,14 @@ internal class CodingSession
         this.EndTime = new DateTime();
     }
 
+    internal CodingSession(System.Int64 id, string start_datetime, string end_datetime, string duration)
+    {
+        this.Id = (int)id;
+        this.StartTime = DateTime.Parse(start_datetime);
+        this.EndTime = DateTime.Parse(end_datetime);
+        this.Duration = TimeSpan.Parse(duration);
+    }
+
     internal void StartTimer()
     {
         timer = new System.Timers.Timer(1000);
